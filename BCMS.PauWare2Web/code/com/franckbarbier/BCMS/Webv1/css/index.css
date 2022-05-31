@@ -1,0 +1,134 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 8.3rem 1fr 5rem;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+}
+.content-title,
+.title,
+.left {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.copy,
+.title {
+    text-align: center;
+}
+
+.btnlog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.btn {
+    background: linear-gradient(#5fbef5, rgb(167, 204, 211), #8fa7ee);
+    width: 20rem;
+    margin: 1rem 0 0 0;
+    height: 3rem;
+    border-radius: .9rem;
+    font-weight: 700;
+}
+
+.fm {
+    background: linear-gradient(#f5965f, rgb(167, 204, 211), #b45935);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: ease-in-out .7s;
+}
+
+header {
+    grid-area: header;
+    background: linear-gradient(#5fbef5, rgb(167, 204, 211), #8fa7ee);
+}
+
+main {
+    grid-area: main;
+    background: linear-gradient(#92e8f3, rgb(198, 231, 238), #8fe0ee);
+}
+.container{
+    display: flex;
+    position: relative;
+}
+
+.action{
+    width: 70%;
+    position: absolute;
+    right: 0;
+    top: 3vh;
+    background: linear-gradient(#e8f6ff, #eee, #d9e2ff);
+    height: 70vh;
+    
+}
+.hide{
+    display: none;
+}
+
+.content-title{
+    text-align: center;
+    background: linear-gradient(#0f76b6, rgb(11, 99, 167), #6386fa);
+    color: rgb(0, 0, 0);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+.form div{
+    width: 80%;
+    margin: 10px 0;
+    display: flex;
+    
+}
+.send,
+.form div button,
+.form div h4,
+.form div input{
+    width: 50%;
+    padding: .3rem 0;
+    border-radius: 10px;
+}
+
+.form div button{
+}
+
+.form div input{
+    border-radius: 0;
+    background-color: #ccecff;
+    
+    
+}
+
+footer {
+    grid-area: footer;
+    background: linear-gradient(#5fbef5, rgb(167, 204, 211), #8fa7ee);
+}
+
+.send{
+    margin-top: 20px;
+    background-color:#0f76b6;
+}
